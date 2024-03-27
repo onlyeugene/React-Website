@@ -1,0 +1,20 @@
+@keyframes rotateImage {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotateImage 10s infinite linear;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem; /* Add border-radius for rounded corners */
+  }
+  
+  .back{
+    background: linear-gradient(to bottom, #00d5ff 0%, #001930 100%);
+  }
+  
