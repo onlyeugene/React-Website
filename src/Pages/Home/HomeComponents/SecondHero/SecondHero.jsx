@@ -5,50 +5,51 @@ import image5 from "../../../../assets/security.png";
 import image6 from "../../../../assets/second pic.jpg";
 import image3 from "../../../../assets/sidearrow.png";
 import image4 from "../../../../assets/star.png";
-import Typed from "typed.js";
+// import Typed from "typed.js";
+
 
 
 const SecondHero = () => {
-    const typedTextRef = useRef(null);
+    // const typedTextRef = useRef(null);
 
-    useEffect(() => {
-      // Options for Typed.js
-      const options = {
-        strings: ["Client Protection","Project Management", "Team Collaboration"], 
-        typeSpeed: 70,
-        showCursor: false,
-        loop: true,
-        delay: 500,
-      };
+    // useEffect(() => {
+    //   // Options for Typed.js
+    //   const options = {
+    //     strings: ["Client Protection","Project Management", "Team Collaboration"], 
+    //     typeSpeed: 70,
+    //     showCursor: false,
+    //     loop: true,
+    //     delay: 500,
+    //   };
   
-      // Initialize Typed.js
-      const typed = new Typed(typedTextRef.current, options);
+    //   // Initialize Typed.js
+    //   const typed = new Typed(typedTextRef.current, options);
   
-      // Clean up on component unmount
-      return () => {
-        typed.destroy();
-      };
-    }, []);
-    const typedTextReff = useRef(null);
+    //   // Clean up on component unmount
+    //   return () => {
+    //     typed.destroy();
+    //   };
+    // }, []);
+    // const typedTextReff = useRef(null);
 
-    useEffect(() => {
-      // Options for Typed.js
-      const options = {
-        strings: [" MetaTrader 5","Why OneExchange?"],
-        typeSpeed: 70,
-        showCursor: false,
-        loop: true,
-        delay: 500,
-      };
+    // useEffect(() => {
+    //   // Options for Typed.js
+    //   const options = {
+    //     strings: [" MetaTrader 5","Why OneExchange?"],
+    //     typeSpeed: 70,
+    //     showCursor: false,
+    //     loop: true,
+    //     delay: 500,
+    //   };
   
-      // Initialize Typed.js
-      const typed2 = new Typed(typedTextReff.current, options);
+    //   // Initialize Typed.js
+    //   const typed2 = new Typed(typedTextReff.current, options);
   
-      // Clean up on component unmount
-      return () => {
-        typed2.destroy();
-      };
-    }, []);
+    //   // Clean up on component unmount
+    //   return () => {
+    //     typed2.destroy();
+    //   };
+    // }, []);
   return (
     <div>
         <div className="xl:flex flex flex-col-reverse xl:flex-row justify-center p-[3rem] gap-[4rem]">
@@ -62,7 +63,7 @@ const SecondHero = () => {
                     Trade online anytime, anywhere. On web, mobile, desktop.
                 </p>
                 <div className="flex items-center gap-1 font-extralight">
-                    <li className="list-none text-[14px]"><span ref={typedTextReff}></span></li>
+                    <li className="list-none text-[14px]">MetaTrader 5</li>
                     <div>
                         <img src={image3} alt="" className="w-[.7rem]" />
                     </div>
@@ -77,7 +78,7 @@ const SecondHero = () => {
                     From secure payments  to real-time trading and everything <br/>in between, you are covered.
                 </p>
                 <div className="flex items-center gap-1 font-extralight pb-[2rem]">
-                    <li className="list-none text-[14px]"><span ref={typedTextRef}></span></li>
+                    <li className="list-none text-[14px]">Why OneExchange</li>
                     <div>
                         <img src={image3} alt="" className="w-[.7rem] " />
                     </div>
