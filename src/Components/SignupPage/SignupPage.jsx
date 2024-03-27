@@ -7,7 +7,7 @@ import image from '../../assets/world2.png'
 // import image4 from '../../assets/circle.png'
 import crossIcon from '../../assets/x.png'
 import checkIcon from '../../assets/check.png'
-import { yupResolver } from "@hookform/resolvers/yup"
+// import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
 import { useForm } from 'react-hook-form'
 
