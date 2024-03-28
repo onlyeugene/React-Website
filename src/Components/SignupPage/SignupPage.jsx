@@ -236,10 +236,8 @@ const SignupPage = () => {
           </div>
         </div>
       </div>
-      <div className="pt-[10rem] xl:text-center p-4 xl:p-0">
-        <h1 className="xl:mr-[11.5rem] text-[28px] font-semibold pb-[1rem]">
-          Welcome to One Exchange
-        </h1>
+      <div className='pt-[10rem] xl:text-center px-[1rem] xl:px-0'>
+            <h1 className='xl:mr-[11.5rem] text-[28px] font-semibold pb-[1rem]'>Welcome to One Exchange</h1>
         <div className="xl:border xl:bg-[#fffefe] xl:border-[#ededed] xl:rounded-lg xl:mx-[35rem]">
           <div className="xl:text-start xl:ml-[7.5rem] ml-[.5rem]">
             <div className="flex items-center gap-[3rem] ml-[3rem] pt-[2rem] pb-[1rem]">
