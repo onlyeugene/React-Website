@@ -7,6 +7,7 @@ import image5 from '../../../../assets/us30.png'
 import image6 from '../../../../assets/aapl.png'
 import './Trade.css'
 import image7 from '../../../../assets/rightarrow.png'
+import { Link } from 'react-router-dom'
 
 const Trade = () => {
 
@@ -186,8 +187,12 @@ const Trade = () => {
         </div>
         <div className='border-t-[1px] border-gray-400  xl:w-[80rem] xl:ml-[12rem]'></div>
         <div className='py-[2rem] pb-[5rem] justify-center flex'>
-                <button className='border py-2 px-4 bg-[#3dbeff] text-black rounded-[.5rem] text-[13px] hover:bg-[#3dbeff] hover:text-white'>Register</button>
-                <button className='bg-[#1f1f1f16] border py-2 px-3 rounded-[.5rem] text-[13px] hover:bg-slate-500 hover:text-white ml-3'>Try free demo</button>
+                <Link to={'/loginPage'}>
+                    <button className='border py-2 px-4 bg-[#3dbeff] text-black rounded-[.5rem] text-[13px] hover:bg-[#3dbeff] hover:text-white'>Register</button>
+                </Link>
+                <Link to={'/signupPage'}>
+                    <button className='bg-[#1f1f1f16] border py-2 px-3 rounded-[.5rem] text-[13px] hover:bg-slate-500 hover:text-white ml-3'>Try free demo</button>
+                </Link>
         </div>
     </div>
   )

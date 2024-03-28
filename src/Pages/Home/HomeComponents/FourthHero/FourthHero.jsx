@@ -5,6 +5,7 @@ import image2 from '../../../../assets/twitter.png'
 import image3 from '../../../../assets/insta.png'
 import image4 from '../../../../assets/linkedin.png'
 import image6 from '../../../../assets/youtube.png'
+import { Link } from 'react-router-dom';
 
 
 const FourthHero = () => {
@@ -18,8 +19,12 @@ const FourthHero = () => {
                     <p className='text-[15px] text-center xl:text-start'>See for yourself why One Exchange is the exchange of choice for over 500,000 traders and 60,000 partners.</p>
                 </div>
                 <div className='xl:flex xl:items-center xl:px-0 py-[1rem] xl:py-0 px-[2.5rem] text-center'>
-                    <button className='border py-2 px-4 bg-[#3dbeff] rounded-[.5rem] text-[16px] hover:bg-[#3dbeff] text-black hover:text-white'>Register</button>
-                    <button className='bg-[#1f1f1f16] border py-2 px-3 rounded-[.5rem] text-[16px] hover:bg-slate-500 hover:text-white xl:ml-3 xl:mt-0 mt-3'>Try free demo</button>
+                    <Link to={'/loginPage'}>
+                        <button className='border py-2 px-4 bg-[#3dbeff] rounded-[.5rem] text-[16px] hover:bg-[#3dbeff] text-black hover:text-white'>Register</button>
+                    </Link>
+                    <Link to={'/signupPage'}>
+                    <button className='bg-[#1f1f1f16] border py-2 px-3 rounded-[.5rem] text-[16px] hover:bg-slate-500 hover:text-white xl:ml-3 ml-0.5 xl:mt-0 mt-3'>Try free demo</button>
+                    </Link>
                 </div>
             </div>
         </div>

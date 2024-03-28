@@ -118,17 +118,17 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 
             {isModalOpen && (
                 <div className="dark">
-                   <div className="fade bg-white w-[23rem] fixed right-[.05rem] h-[110vh] z-20 top-0">
+                   <div className="fade bg-white w-[24.5rem] fixed right-[0rem] h-[110vh] z-20 top-0">
                     <div>
                         <Link to={'/'}>
-                            <h1 className='text-[24px] font-bold absolute top-4'>One Exchange</h1>
+                            <h1 className='text-[24px] font-bold absolute top-4 px-[1.5rem]'>One Exchange</h1>
                         </Link>
                         <Link to={'/loginPage'}>
-                        <button className=' fixed right-[5.5rem] top-4 text-[18px] sign'>Sign in</button>
+                        <button className=' fixed pl-[17rem] top-6 text-[16px] sign'>Sign in</button>
                     </Link>
                     </div>
-                <img src={image3} alt="" className="absolute left-[20rem] w-[2rem] top-5" onClick={toggleModal} />
-                <ul className=" absolute top-[7rem] left-[rem]">
+                <img src={image3} alt="" className="absolute left-[21.5rem] w-[2rem] top-5" onClick={toggleModal} />
+                <ul className=" absolute top-[7rem] left-[1.5rem]">
                     <Link to={'/Trading'} className='flex gap-1'>
                         <li className="pb-[1.5rem]  text-[16px]">Trading</li>
                         <div>

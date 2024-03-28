@@ -50,7 +50,7 @@ const LoginPage = () => {
   return (
     <div>
         <div className='fixed bg-[#329cd1]  w-full z-20 p-5'>
-            <div className='flex justify-between px-[10rem] items-center'>
+            <div className='flex justify-between xl:px-[10rem] items-center'>
                 <Link to={'/'}>
                     <h1 className='font-semibold  text-[28px] text-white'>One Exchange</h1>
                 </Link>
@@ -59,10 +59,10 @@ const LoginPage = () => {
                 </div>
             </div>
         </div>
-        <div className='pt-[10rem] text-center'>
-            <h1 className='mr-[11.5rem] text-[28px] font-semibold pb-[1rem]'>Welcome to One Exchange</h1>
-            <div className='border bg-[#fffefe] border-[#ededed] rounded-lg mx-[35rem]'>
-                <div className='text-start ml-[7.5rem]'>
+        <div className='pt-[10rem] xl:text-center px-[1rem] xl:px-0'>
+            <h1 className='xl:mr-[11.5rem] text-[28px] font-semibold pb-[1rem]'>Welcome to One Exchange</h1>
+            <div className='xl:border xl:bg-[#fffefe] xl:border-[#ededed] xl:rounded-lg xl:mx-[35rem]'>
+                <div className='text-start xl:ml-[7.5rem] ml-[.5rem]'>
                     <div className='flex items-center gap-[3rem] ml-[3rem] pt-[2rem] pb-[1rem]'>
                         <Link to={'/loginPage'} className='relative'>
                             <p>Sign in</p>
@@ -96,7 +96,7 @@ const LoginPage = () => {
                                     {...register ('password')}
                                     />
                                     <p className='mb-[1rem] text-[12px] text-red-600'>{errors.password?.message}</p> 
-                                    <img className='w-[1rem] absolute top-5 right-[7.5rem]'
+                                    <img className='w-[1rem] absolute top-5 xl:right-[7.5rem] right-[1.5rem]'
                                     src={showPassword ? image1 : image2}
                                     alt='Toggle password visibility'
                                     onClick={togglePasswordVisibility}
@@ -104,13 +104,13 @@ const LoginPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value='Continue' className='border py-[.5rem] px-[7.8rem] bg-[#3dbeff] rounded-[.5rem] text-[16px] hover:bg-[#3dbeff] hover:text-white mb-[2rem]'/>
+                        <input type="submit" value='Continue' className='border py-[.5rem] px-[8.5rem] bg-[#3dbeff] rounded-[.5rem] text-[16px] hover:bg-[#3dbeff] hover:text-white mb-[2rem]'/>
                     </form>
                 </div>
             </div>
         </div>
-        <div className='py-[4rem]'>
-            <div className='text-[10px] font-light px-[10rem]'>
+        <div className='xl:py-[4rem]'>
+            <div className='text-[10px] font-light xl:px-[10rem] px-[1.5rem]'>
                 <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facere excepturi perferendis dignissimos, tempore rem sunt optio eveniet sed quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illum earum eligendi cupiditate, corrupti sunt laboriosam nihil placeat ullam quasi!</p>
                 <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus expedita, dignissimos odit iure asperiores ratione voluptatum eos quas porro dolores molestiae corporis, aperiam amet unde modi ipsam optio sint! Cumque eum beatae et commodi, quos placeat soluta, culpa repellat, necessitatibus atque quidem! Consequatur nostrum voluptatibus ipsam, illum ullam odio!</p>
                 <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit eaque! Cum nihil hic praesentium aperiam quasi ratione delectus laboriosam ducimus ullam, quod dolores quam culpa quo commodi tempora quia. Eos ut eaque itaque ex ducimus ad cum, sit, maiores modi consequatur perspiciatis vitae eum, laboriosam dicta libero voluptates laudantium.</p>
@@ -118,13 +118,13 @@ const LoginPage = () => {
                 <p className='pb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perspiciatis!</p>
                 <p className='pb-[3rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat ea est perferendis culpa. Recusandae placeat quis exercitationem incidunt consequatur mollitia blanditiis quos perspiciatis fuga. Repudiandae tenetur cum perspiciatis deserunt velit id nobis quisquam, impedit voluptatum autem? Porro, nisi quam?</p>
             </div>
-            <div className='border-t-[1px] border-gray-350 w-[84.5rem] ml-[10rem] flex justify-between text-[13px]'>
-                <div className='flex gap-[1rem] pt-[1rem]'>
-                    <p>Risk Disclosure</p>
-                    <p>Prevent Money Laundering</p>
-                    <p>Privacy Policy</p>
+            <div className='border-t-[1px] border-gray-350 xl:w-[84.5rem] w-[21rem] xl:ml-[10rem] ml-[1.5rem] xl:flex justify-between text-[13px] '>
+                <div className='xl:flex gap-[1rem] pt-[1rem]'>
+                    <p className='pb-1 xl:pb-0'>Risk Disclosure</p>
+                    <p className='pb-1 xl:pb-0'>Prevent Money Laundering</p>
+                    <p className='pb-1 xl:pb-0'>Privacy Policy</p>
                 </div>
-                <div className='pt-[1rem]'>
+                <div className='xl:pt-[1rem] pt-0 xl:pb-0 pb-2'>
                     <p>&copy; 2024 One Exchange</p>
                 </div>
             </div>

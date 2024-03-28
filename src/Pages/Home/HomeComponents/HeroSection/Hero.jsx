@@ -3,6 +3,7 @@ import image1 from '../../../../assets/users.png'
 import image2 from '../../../../assets/licence.png'
 import image3 from '../../../../assets/customer.png'
 import image4 from '../../../../assets/certified.png'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -12,8 +13,12 @@ const Hero = () => {
             <p className='font-light'>Trade with the world's largest exchange and benefit from our <br/> better-than-market rates. </p>
 
             <div className='py-[2rem] pb-[5rem]'>
-                <button className='border py-2 px-4 bg-[#3dbeff] rounded-[.5rem] text-[13px] hover:bg-[#3dbeff] hover:text-white'>Register</button>
-                <button className='bg-[#1f1f1f16] border py-2 px-3 rounded-[.5rem] text-[13px] hover:bg-slate-500 hover:text-white ml-3'>Try free demo</button>
+                <Link to={'/loginPage'}>
+                    <button className='border py-2 px-4 bg-[#3dbeff] rounded-[.5rem] text-[13px] hover:bg-[#3dbeff] hover:text-white'>Register</button>
+                </Link>
+                <Link to={'/signupPage'}>
+                    <button className='bg-[#1f1f1f16] border py-2 px-3 rounded-[.5rem] text-[13px] hover:bg-slate-500 hover:text-white ml-3'>Try free demo</button>
+                </Link>
             </div>
             <div className='border-t-[1px] border-gray-350 xl:w-[85rem] xl:flex xl:ml-[10rem] xl:gap-[10.5rem]  xl:py-3 p-[1rem]'>
                 <div className='flex gap-2 items-center xl:p-0 p-2'>
